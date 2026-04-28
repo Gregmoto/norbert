@@ -1,18 +1,11 @@
 const header = document.querySelector(".site-header");
+const mobileCall = document.querySelector(".mobile-call");
 
-window.addEventListener(
-  "scroll",
-  () => {
-    header?.classList.toggle("is-scrolled", window.scrollY > 24);
-  },
-  { passive: true }
-);
+const updateChrome = () => {
+  header?.classList.toggle("is-scrolled", window.scrollY > 24);
+  mobileCall?.classList.toggle("is-visible", window.scrollY > 420);
+};
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", (event) => {
-    const target = document.querySelector(link.getAttribute("href"));
-    if (!target) return;
-    event.preventDefault();
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-});
+window.addEventListener("scroll", updateChrome, { passive: true });
+window.addEventListener("load", updateChrome);
+updateChrome();
