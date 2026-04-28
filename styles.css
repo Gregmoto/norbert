@@ -612,6 +612,119 @@ textarea {
   gap: 4px;
 }
 
+.subpage-hero {
+  background: var(--green);
+  color: #fff;
+}
+
+.subpage-hero .section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: end;
+  padding-top: clamp(70px, 9vw, 118px);
+}
+
+.subpage-hero p:not(.kicker),
+.subpage-panel p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+}
+
+.subpage-panel {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.content-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  gap: clamp(28px, 5vw, 70px);
+  align-items: start;
+}
+
+.article-body {
+  max-width: 820px;
+}
+
+.article-body h2 {
+  margin-top: 38px;
+  font-size: clamp(26px, 3vw, 38px);
+}
+
+.article-body h3 {
+  margin-top: 28px;
+}
+
+.article-body p,
+.article-body li {
+  color: #53605a;
+  font-size: 18px;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 22px;
+}
+
+.side-nav {
+  position: sticky;
+  top: 110px;
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.side-nav strong {
+  margin-bottom: 4px;
+}
+
+.side-nav a {
+  color: #33413b;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.side-nav a:hover {
+  color: var(--clay);
+}
+
+.cta-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 28px;
+  border-radius: var(--radius);
+  background: var(--green);
+  color: #fff;
+}
+
+.cta-band p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
 .mobile-call {
   display: none;
 }
@@ -636,7 +749,10 @@ textarea {
   .hero-inner,
   .reviews,
   .local-seo,
-  .contact {
+  .contact,
+  .subpage-hero .section,
+  .content-layout,
+  .cta-band {
     grid-template-columns: 1fr;
   }
 
@@ -719,6 +835,10 @@ textarea {
 
   .card {
     min-height: 0;
+  }
+
+  .side-nav {
+    position: static;
   }
 
   .site-footer {

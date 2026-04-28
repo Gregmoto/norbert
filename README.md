@@ -10,6 +10,8 @@ Statyczna strona dla salonu podłóg i drzwi Stylowe Wnętrza w Pabianicach.
 - dane strukturalne LocalBusiness i FAQ,
 - formularz kontaktowy mailto,
 - mapę Google,
+- podstrony oferty: podłogi, podkłady, drzwi, parapety i listwy,
+- artykuły blogowe pod frazy poradnikowe,
 - `robots.txt` i `sitemap.xml`.
 
 ## Uruchomienie lokalne
