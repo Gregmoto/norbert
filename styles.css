@@ -307,34 +307,55 @@ h3 {
   font-weight: 800;
 }
 
+.proof-band {
+  width: 100%;
+  background: var(--green);
+  color: #fff;
+}
+
+.proof-inner {
+  display: grid;
+  gap: 28px;
+  padding-top: clamp(42px, 5vw, 64px);
+  padding-bottom: clamp(42px, 5vw, 64px);
+}
+
+.proof-copy h2 {
+  max-width: 740px;
+  font-size: clamp(28px, 3.5vw, 44px);
+}
+
+.proof-copy .kicker {
+  color: #f1b88f;
+}
+
 .proof-stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
-  padding-top: 18px;
 }
 
 .proof-stats article {
   display: grid;
-  min-height: 160px;
+  min-height: 138px;
   align-content: center;
   gap: 8px;
-  padding: 24px;
-  border: 1px solid var(--line);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius);
-  background: #fff;
-  box-shadow: 0 10px 30px rgba(17, 24, 22, 0.05);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .proof-stats strong {
-  color: var(--green);
-  font-size: clamp(38px, 5vw, 62px);
+  color: #fff;
+  font-size: clamp(34px, 3.7vw, 54px);
   line-height: 1;
+  white-space: nowrap;
 }
 
 .proof-stats span {
-  color: #53605a;
-  font-size: 18px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 15px;
   font-weight: 900;
 }
 
@@ -872,8 +893,11 @@ textarea {
   }
 
   .product-grid,
-  .proof-stats,
   .check-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .proof-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -940,7 +964,6 @@ textarea {
   }
 
   .product-grid,
-  .proof-stats,
   .timeline,
   .projects,
   .news-grid,
@@ -949,6 +972,14 @@ textarea {
   .faq-grid,
   .calculator-form {
     grid-template-columns: 1fr;
+  }
+
+  .proof-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-stats article {
+    min-height: 112px;
   }
 
   .card {
