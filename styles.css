@@ -381,28 +381,27 @@ h3 {
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.18)),
-    url("assets/showroom-hero.webp") center / cover no-repeat;
-  background-size: auto, 250% auto;
+    var(--card-image) center / cover no-repeat;
 }
 
 .visual-floor {
-  background-position: center, 86% 78%;
+  --card-image: url("assets/product-floors.webp");
 }
 
 .visual-underlay {
-  background-position: center, 52% 92%;
+  --card-image: url("assets/product-underlays.webp");
 }
 
 .visual-door {
-  background-position: center, 54% 36%;
+  --card-image: url("assets/product-doors.webp");
 }
 
 .visual-sill {
-  background-position: center, 98% 82%;
+  --card-image: url("assets/product-sills.webp");
 }
 
 .visual-skirting {
-  background-position: center, 94% 96%;
+  --card-image: url("assets/product-skirting.webp");
 }
 
 .card a,
