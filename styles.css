@@ -379,29 +379,39 @@ h3 {
   min-height: 132px;
   margin: -22px -22px 22px;
   border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.18)),
-    var(--card-image) center / cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .visual-floor {
-  --card-image: url("assets/product-floors.webp");
+  background-image:
+    linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.18)),
+    url("assets/product-floors.webp");
 }
 
 .visual-underlay {
-  --card-image: url("assets/product-underlays.webp");
+  background-image:
+    linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.18)),
+    url("assets/product-underlays.webp");
 }
 
 .visual-door {
-  --card-image: url("assets/product-doors.webp");
+  background-image:
+    linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.18)),
+    url("assets/product-doors.webp");
 }
 
 .visual-sill {
-  --card-image: url("assets/product-sills.webp");
+  background-image:
+    linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.18)),
+    url("assets/product-sills.webp");
 }
 
 .visual-skirting {
-  --card-image: url("assets/product-skirting.webp");
+  background-image:
+    linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.18)),
+    url("assets/product-skirting.webp");
 }
 
 .card a,
