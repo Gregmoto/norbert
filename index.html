@@ -123,6 +123,7 @@
       </a>
       <nav class="main-nav" aria-label="Menu">
         <a href="#oferta">Oferta</a>
+        <a href="#kalkulator">Kalkulator</a>
         <a href="#uslugi">Usługi</a>
         <a href="#realizacje">Realizacje</a>
         <a href="#opinie">Opinie</a>
@@ -219,6 +220,52 @@
             <p>Listwy MDF, drewniane i systemowe. Estetyczne zamknięcie podłogi bez przypadkowych detali.</p>
             <a href="oferta/listwy.html">Czytaj o listwach</a>
           </article>
+        </div>
+      </section>
+
+      <section id="kalkulator" class="section calculator-section" aria-labelledby="calculator-title">
+        <div class="section-head">
+          <p class="kicker">Kalkulator</p>
+          <h2 id="calculator-title">Oblicz powierzchnię podłogi i zapas na docinki</h2>
+          <p>
+            Wpisz długość i szerokość pomieszczenia. Dodaj procent zapasu na odpady montażowe,
+            docinki i trudniejszy układ paneli.
+          </p>
+        </div>
+        <div class="calculator">
+          <form class="calculator-form" aria-label="Kalkulator powierzchni podłogi">
+            <label>
+              Długość pomieszczenia (m)
+              <input id="floor-length" type="number" min="0" step="0.01" inputmode="decimal" placeholder="np. 5.20" />
+            </label>
+            <label>
+              Szerokość pomieszczenia (m)
+              <input id="floor-width" type="number" min="0" step="0.01" inputmode="decimal" placeholder="np. 3.80" />
+            </label>
+            <label>
+              Zapas / spill (%)
+              <input id="floor-waste" type="number" min="0" max="30" step="1" inputmode="numeric" value="10" />
+            </label>
+            <label>
+              m² w paczce (opcjonalnie)
+              <input id="floor-pack" type="number" min="0" step="0.01" inputmode="decimal" placeholder="np. 2.22" />
+            </label>
+          </form>
+          <div class="calculator-results" aria-live="polite">
+            <div>
+              <span>Powierzchnia netto</span>
+              <strong id="result-area">0,00 m²</strong>
+            </div>
+            <div>
+              <span>Razem z zapasem</span>
+              <strong id="result-total">0,00 m²</strong>
+            </div>
+            <div>
+              <span>Szacowana liczba paczek</span>
+              <strong id="result-packs">-</strong>
+            </div>
+            <p id="calculator-note">Standardowo dolicza się 5-10% zapasu. Przy układzie jodełki lub wielu wnękach warto przyjąć więcej.</p>
+          </div>
         </div>
       </section>
 
