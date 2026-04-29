@@ -372,18 +372,37 @@ h3 {
   min-height: 260px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-.card-icon {
-  display: inline-grid;
-  width: 42px;
-  height: 42px;
-  margin-bottom: 24px;
-  place-items: center;
-  border-radius: 50%;
-  background: #efe4dc;
-  color: var(--clay);
-  font-weight: 900;
+.card-visual {
+  min-height: 132px;
+  margin: -22px -22px 22px;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(17, 24, 22, 0.05), rgba(17, 24, 22, 0.18)),
+    url("assets/showroom-hero.webp") center / cover no-repeat;
+  background-size: auto, 250% auto;
+}
+
+.visual-floor {
+  background-position: center, 86% 78%;
+}
+
+.visual-underlay {
+  background-position: center, 52% 92%;
+}
+
+.visual-door {
+  background-position: center, 54% 36%;
+}
+
+.visual-sill {
+  background-position: center, 98% 82%;
+}
+
+.visual-skirting {
+  background-position: center, 94% 96%;
 }
 
 .card a,
