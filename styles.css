@@ -307,6 +307,37 @@ h3 {
   font-weight: 800;
 }
 
+.proof-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  padding-top: 18px;
+}
+
+.proof-stats article {
+  display: grid;
+  min-height: 160px;
+  align-content: center;
+  gap: 8px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(17, 24, 22, 0.05);
+}
+
+.proof-stats strong {
+  color: var(--green);
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1;
+}
+
+.proof-stats span {
+  color: #53605a;
+  font-size: 18px;
+  font-weight: 900;
+}
+
 .section-head {
   display: grid;
   max-width: 800px;
@@ -841,6 +872,7 @@ textarea {
   }
 
   .product-grid,
+  .proof-stats,
   .check-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -908,6 +940,7 @@ textarea {
   }
 
   .product-grid,
+  .proof-stats,
   .timeline,
   .projects,
   .news-grid,
