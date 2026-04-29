@@ -54,8 +54,11 @@ const updateCalculator = () => {
 
 Object.values(calculatorInputs).forEach((input) => {
   input?.addEventListener("input", updateCalculator);
+  input?.addEventListener("change", updateCalculator);
+  input?.addEventListener("keyup", updateCalculator);
 });
 
+window.calculateFloor = updateCalculator;
 updateCalculator();
 
 formFields.forEach((field) => {
